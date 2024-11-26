@@ -31,7 +31,7 @@ export default function Aggregator(props) {
 		{ id: 'borrow', name: 'Borrow', content: <Lending {...lendingProps} /> }
 	];
 	return (
-		<Layout title={`Meta-dex aggregator - DefiLlama`} defaultSEO>
+		<Layout title={`Swap Pro`} defaultSEO>
 			<div style={{ display: 'flex', justifyContent: 'center' }}>
 				<Tabs tabs={tabData} />
 			</div>
