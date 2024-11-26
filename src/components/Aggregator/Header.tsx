@@ -31,7 +31,7 @@ const Header = ({ children }) => {
 					mr="8px"
 					alt="logo"
 				/>
-				LlamaSwap
+				Swap Pro
 			</Name>
 			{children}
 		</Wrapper>

@@ -269,7 +269,7 @@ export function LiquidityByToken({ fromToken, toToken, chain }: { fromToken: ITo
 											borderRadius: '8px',
 											width: '100%',
 											minWidth: '80px',
-											background: '#141619'
+											background: '#000'
 										}}
 									/>
 									<Text pos="absolute" top="4px" right="4px">
@@ -298,7 +298,7 @@ export function LiquidityByToken({ fromToken, toToken, chain }: { fromToken: ITo
 											borderRadius: '8px',
 											width: '100%',
 											minWidth: '80px',
-											background: '#141619'
+											background: '#000'
 										}}
 									/>
 									<Text pos="absolute" top="4px" right="4px">

@@ -28,7 +28,7 @@ const RouteWrapper = styled.div`
 		background-color: rgb(3 11 23);
 	}
 
-	background-color: #2d3039;
+	background-color: #000;
 	border: 1px solid #373944;
 	padding: 7px 15px 9px;
 	border-radius: 8px;

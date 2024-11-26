@@ -35,7 +35,7 @@ import {
 	PopoverContent
 } from '@chakra-ui/react';
 import ReactSelect from '~/components/MultiSelect';
-import FAQs from '~/components/FAQs';
+
 import SwapRoute, { LoadingRoute } from '~/components/SwapRoute';
 import { adaptersNames, getAllChains, swap, gaslessApprove } from './router';
 import { inifiniteApprovalAllowed } from './list';
@@ -205,7 +205,7 @@ const Routes = styled.div<{ visible: boolean }>`
 
 	@media screen and (max-width: ${({ theme }) => theme.bpMed}) {
 		z-index: 10;
-		background-color: #22242a;
+		background-color: #000;
 		position: absolute;
 		box-shadow: none;
 		clip-path: ${({ visible }) => (visible ? 'inset(0 0 0 0);' : 'inset(0 0 0 100%);')};
@@ -1594,19 +1594,6 @@ export function AggregatorContainer({ tokenList }) {
 						: null}
 				</Routes>
 			</BodyWrapper>
-
-			{window === parent ? <FAQs /> : null}
-			<Text fontSize="1rem" fontWeight="500" display={{ base: 'none', md: 'block', lg: 'block' }}>
-				This product is still in beta. If you run into any issue please let us know in our{' '}
-				<a
-					style={{ textDecoration: 'underline' }}
-					target={'_blank'}
-					rel="noreferrer noopener"
-					href="https://discord.swap.defillama.com/"
-				>
-					discord server
-				</a>
-			</Text>
 			<TransactionModal open={txModalOpen} setOpen={setTxModalOpen} link={txUrl} />
 		</Wrapper>
 	);
